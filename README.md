@@ -2,4 +2,6 @@
 
 Integrantes:</br>
 -Nelson Rubio</br>
--Edison Muñoz
+-Edison Muñoz </br>
+
+Ambos de Ingenieria Civil Informatica.
