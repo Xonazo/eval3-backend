@@ -24,6 +24,7 @@ Route::prefix('/perro')->group(function () {
     Route::get('/all', [PerroController::class, 'getAllPerros']);
     Route::delete('/delete', [PerroController::class, 'deletePerro']);
     Route::put('/edit', [PerroController::class, 'editPerro']);
+    Route::get('/find/{id}', [PerroController::class, 'findPerro']);
 });
 
 Route::prefix('/interaccion')->group(function () {
@@ -32,5 +33,4 @@ Route::prefix('/interaccion')->group(function () {
     Route::delete('/delete', [InteraccionController::class, 'deleteInteraccion']);
     Route::put('/edit', [InteraccionController::class, 'editInteraccion']);
     Route::get('/perro', [InteraccionController::class, 'getInterracionPerro']);
-    
 });

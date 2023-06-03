@@ -62,6 +62,18 @@ public function editPerro(Request $request)
     }
 }
 
+public function findPerro($id)
+{
+    $perro = Perro::find($id);
+
+    if ($perro) {
+        return response()->json($perro, 200);
+    } else {
+        return response()->json(['message' => 'Perro no encontrado'], 404);
+    }
+}
+
+
 
 
 }
