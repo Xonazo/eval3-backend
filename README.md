@@ -8,11 +8,11 @@ Ambos de Ingenieria Civil Informatica.
 
 
 # Rutas Perro:
-## Buscar todos los perros (Get) </br>
+## Buscar todos los perros (Get) 
 http://127.0.0.1:8000/api/perro/all</br>
 (Sin Json)
 </br>
-## Crear Perro (Post)</br>
+## Crear Perro (Post)
 http://127.0.0.1:8000/api/perro/create</br>
 Json Ejemplo:
 ```
@@ -23,8 +23,8 @@ Json Ejemplo:
 }
 ```
 
-
-## Buscar Perro ID </br>
+</br>
+## Buscar Perro ID 
 http://127.0.0.1:8000/api/perro/id </br>
 
 Json Ejemplo:
@@ -33,7 +33,8 @@ Json Ejemplo:
 	"id":2
 }
 ```
-## Editar Perro </br>
+</br>
+## Editar Perro 
 http://127.0.0.1:8000/api/perro/edit </br>
 Json Ejemplo:
 ```
@@ -44,8 +45,8 @@ Json Ejemplo:
 	"descripcion":"tonto"
 }
 ```
-
-## Borrar Perro</br>
+</br>
+## Borrar Perro
 http://127.0.0.1:8000/api/perro/delete</br>
 Json Ejemplo:
 ```
@@ -54,9 +55,9 @@ Json Ejemplo:
 }
 ```
 
-
-# Rutas Interaccion:</br>
-## Crear Interaccion</br>
+</br>
+# Rutas Interaccion:
+## Crear Interaccion<
 http://127.0.0.1:8000/api/interaccion/create</br>
 Json Ejemplo:
 ```
@@ -67,8 +68,8 @@ Json Ejemplo:
 	
 }
 ```
-
-## Borrar Interaccion</br> 
+</br>
+## Borrar Interaccion
 http://127.0.0.1:8000/api/interaccion/delete</br>
 
 Json Ejemplo
@@ -77,12 +78,12 @@ Json Ejemplo
 	"id":2
 }
 ```
-
-## Obtener todas las interacciones</br>
+</br>
+## Obtener todas las interacciones
 http://127.0.0.1:8000/api/interaccion/all</br>
 (Sin Json)
 
-
+</br>
 ## Editar Interacciones
 http://127.0.0.1:8000/api/interaccion/edit </br>
 Json Ejemplo:
@@ -95,7 +96,7 @@ Json Ejemplo:
 	
 }
 ```
-
+</br>
 ## Obtener interacciones de perro</br> 
 http://127.0.0.1:8000/api/interaccion/perro</br>
 Json Ejemplo:
