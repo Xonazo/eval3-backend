@@ -15,11 +15,13 @@ http://127.0.0.1:8000/api/perro/all
 Crear Perro (Post)
 http://127.0.0.1:8000/api/perro/create
 Json Ejemplo:
+::
 {
 	"nombre":"Nelson",
 	"url_foto":"www.google.cl",
 	"descripcion":"perro alto"
 }
+::
 
 
 Buscar Perro ID
