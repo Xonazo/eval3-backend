@@ -7,7 +7,7 @@ Integrantes:</br>
 Ambos de Ingenieria Civil Informatica.
 
 
-#Rutas Perro:
+# Rutas Perro:
 Buscar todos los perros (Get)
 http://127.0.0.1:8000/api/perro/all
 (Sin Json)
