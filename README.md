@@ -8,12 +8,12 @@ Ambos de Ingenieria Civil Informatica.
 
 
 # Rutas Perro:
-Buscar todos los perros (Get)
-http://127.0.0.1:8000/api/perro/all
+## Buscar todos los perros (Get) </br>
+http://127.0.0.1:8000/api/perro/all</br>
 (Sin Json)
-
-Crear Perro (Post)
-http://127.0.0.1:8000/api/perro/create
+</br>
+## Crear Perro (Post)</br>
+http://127.0.0.1:8000/api/perro/create</br>
 Json Ejemplo:
 ```
 {
@@ -24,8 +24,8 @@ Json Ejemplo:
 ```
 
 
-Buscar Perro ID
-http://127.0.0.1:8000/api/perro/id
+## Buscar Perro ID </br>
+http://127.0.0.1:8000/api/perro/id </br>
 
 Json Ejemplo:
 ```
@@ -33,8 +33,8 @@ Json Ejemplo:
 	"id":2
 }
 ```
-Editar Perro 
-http://127.0.0.1:8000/api/perro/edit
+## Editar Perro </br>
+http://127.0.0.1:8000/api/perro/edit </br>
 Json Ejemplo:
 ```
 {
@@ -45,8 +45,8 @@ Json Ejemplo:
 }
 ```
 
-Borrar Perro
-http://127.0.0.1:8000/api/perro/delete
+## Borrar Perro</br>
+http://127.0.0.1:8000/api/perro/delete</br>
 Json Ejemplo:
 ```
 {
@@ -55,9 +55,9 @@ Json Ejemplo:
 ```
 
 
-Rutas Interaccion:
-Crear Interaccion
-http://127.0.0.1:8000/api/interaccion/create
+# Rutas Interaccion:</br>
+## Crear Interaccion</br>
+http://127.0.0.1:8000/api/interaccion/create</br>
 Json Ejemplo:
 ```
 {
@@ -68,8 +68,8 @@ Json Ejemplo:
 }
 ```
 
-Borrar Interaccion
-http://127.0.0.1:8000/api/interaccion/delete
+## Borrar Interaccion</br> 
+http://127.0.0.1:8000/api/interaccion/delete</br>
 
 Json Ejemplo
 ```
@@ -78,13 +78,13 @@ Json Ejemplo
 }
 ```
 
-Obtener todas las interacciones
-http://127.0.0.1:8000/api/interaccion/all
+## Obtener todas las interacciones</br>
+http://127.0.0.1:8000/api/interaccion/all</br>
 (Sin Json)
 
 
-Editar Interacciones
-http://127.0.0.1:8000/api/interaccion/edit
+## Editar Interacciones
+http://127.0.0.1:8000/api/interaccion/edit </br>
 Json Ejemplo:
 ```
 {
@@ -96,8 +96,8 @@ Json Ejemplo:
 }
 ```
 
-Obtener interacciones de perro
-http://127.0.0.1:8000/api/interaccion/perro
+## Obtener interacciones de perro</br> 
+http://127.0.0.1:8000/api/interaccion/perro</br>
 Json Ejemplo:
 ```
 {
