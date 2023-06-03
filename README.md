@@ -23,7 +23,7 @@ Json Ejemplo:
 }
 ```
 
-</br>
+
 ## Buscar Perro ID 
 http://127.0.0.1:8000/api/perro/id </br>
 
@@ -33,7 +33,7 @@ Json Ejemplo:
 	"id":2
 }
 ```
-</br>
+
 ## Editar Perro 
 http://127.0.0.1:8000/api/perro/edit </br>
 Json Ejemplo:
@@ -45,7 +45,7 @@ Json Ejemplo:
 	"descripcion":"tonto"
 }
 ```
-</br>
+
 ## Borrar Perro
 http://127.0.0.1:8000/api/perro/delete</br>
 Json Ejemplo:
@@ -55,7 +55,7 @@ Json Ejemplo:
 }
 ```
 
-</br>
+
 # Rutas Interaccion:
 ## Crear Interaccion<
 http://127.0.0.1:8000/api/interaccion/create</br>
@@ -68,7 +68,7 @@ Json Ejemplo:
 	
 }
 ```
-</br>
+
 ## Borrar Interaccion
 http://127.0.0.1:8000/api/interaccion/delete</br>
 
@@ -78,12 +78,12 @@ Json Ejemplo
 	"id":2
 }
 ```
-</br>
+
 ## Obtener todas las interacciones
 http://127.0.0.1:8000/api/interaccion/all</br>
 (Sin Json)
 
-</br>
+
 ## Editar Interacciones
 http://127.0.0.1:8000/api/interaccion/edit </br>
 Json Ejemplo:
@@ -96,7 +96,7 @@ Json Ejemplo:
 	
 }
 ```
-</br>
+
 ## Obtener interacciones de perro</br> 
 http://127.0.0.1:8000/api/interaccion/perro</br>
 Json Ejemplo:
