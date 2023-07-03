@@ -33,7 +33,7 @@ class InteraccionController extends Controller
         return response()->json(["interacciones"=>$interacciones], Response::HTTP_OK);
     }
 
-    public function deleteInteraccion(Request $request)
+    public function deleteInteraccion(InteraccionRequest $request)
     {
         try {
             $interaccion = Interaccion::find($request->id);
@@ -44,7 +44,7 @@ class InteraccionController extends Controller
         }
     }
 
-    public function editInteraccion(Request $request)
+    public function editInteraccion(InteraccionRequest $request)
     {
         try {
             $interaccion = Interaccion::find($request->id);
@@ -59,7 +59,7 @@ class InteraccionController extends Controller
     }
 
 
-    public function getInterracionPerro(Request $request)
+    public function getInterracionPerro(InteraccionRequest $request)
     {
         try {
             $interacciones = Interaccion::where('Perro_interesado_id', $request->id)->get();

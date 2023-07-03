@@ -36,7 +36,7 @@ public function getAllPerros(Request $request)
 
 
 
-public function deletePerro(Request $request)
+public function deletePerro(PerroRequest $request)
 {
     try {
         $perro = Perro::find($request->id);
@@ -48,7 +48,7 @@ public function deletePerro(Request $request)
 }
 
 
-public function editPerro(Request $request)
+public function editPerro(PerroRequest $request)
 {
     try{
         $perro = Perro::find($request->id);
@@ -62,7 +62,7 @@ public function editPerro(Request $request)
     }
 }
 
-public function getPerroid(Request $request)
+public function getPerroid(PerroRequest $request)
 {
     try{
         $perro = Perro::find($request->id);

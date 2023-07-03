@@ -12,11 +12,34 @@ class PerroRequest extends FormRequest
   
     public function rules(): array
     {
-        return [
-            'nombre' => 'required|string',
-            'url_foto' => 'required|string',
-            'descripcion' => 'required|string',
-        ];
+        
+        $method = $this->method();
+
+        switch ($method){
+            case 'POST':
+                return [
+                    'nombre' => 'sometimes|required|string',
+                    'url_foto' => 'sometimes|required|string',
+                    'descripcion' => 'sometimes|required|string',
+                ];
+            case 'GET':
+                return [
+                    'id' => 'sometimes|required|integer',
+                ];
+            case 'DELETE':
+                return [
+                    'id' => 'sometimes|required|integer',
+                ];
+            case 'PUT':
+                return [
+                    'nombre' => 'sometimes|required|string',
+                    'url_foto' => 'sometimes|required|string',
+                    'descripcion' => 'sometimes|required|string',
+                    'id' => 'sometimes|required|integer',
+                ];
+            default:
+                return [];
+        }
         
     }
 
@@ -29,6 +52,8 @@ class PerroRequest extends FormRequest
         'url_foto.string' => 'El campo url_foto debe ser un string',
         'descripcion.required' => 'El campo descripcion es obligatorio',
         'descripcion.string' => 'El campo descripcion debe ser un string',
+        'id.required' => 'El campo id es obligatorio',
+        'id.integer' => 'El campo id debe ser un entero',
      ];
     }
 

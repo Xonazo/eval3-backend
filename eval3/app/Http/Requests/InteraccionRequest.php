@@ -25,11 +25,36 @@ class InteraccionRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'Perro_interesado_id' => 'required|integer',
-            'Perro_candidato_id' => 'required|integer',
-            'preferencia' => 'required|alpha',
-        ];
+        
+        $method = $this->method();
+
+        switch ($method){
+            case 'POST':
+                return [
+                    'Perro_interesado_id' => 'sometimes|required|integer',
+                    'Perro_candidato_id' => 'sometimes|required|integer',
+                    'preferencia' => ['sometimes','required', 'string', 'in:aceptado,rechazado'],
+                ];
+            case 'GET':
+                return [
+                    'id' => 'sometimes|required|integer',
+                ];
+            case 'DELETE':
+                return [
+                    'id' => 'sometimes|required|integer',
+                ];
+            case 'PUT':
+                return [
+                    'Perro_interesado_id' => 'sometimes|required|integer',
+                    'Perro_candidato_id' => 'sometimes|required|integer',
+                    'preferencia' => ['sometimes','required', 'string', 'in:aceptado,rechazado'],
+                    'id' => 'sometimes|required|integer',
+                ];
+            default:
+                return [];
+        }
+
+
     }
 
 
@@ -42,7 +67,9 @@ class InteraccionRequest extends FormRequest
         'Perro_candidato_id.integer' => 'El campo Perro_candidato_id debe ser un entero',
         'preferencia.required' => 'El campo preferencia es obligatorio',
         'preferencia.string' => 'El campo preferencia debe ser un string',
-        'preferencia.alpha' => 'El campo preferencia debe ser alfabético',
+        'preferencia.in' => 'El campo preferencia debe ser aceptado o rechazado',
+        'id.required' => 'El campo id es obligatorio',
+        'id.integer' => 'El campo id debe ser un entero',
      ];
     }
 
