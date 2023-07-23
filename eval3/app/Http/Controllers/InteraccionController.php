@@ -62,7 +62,7 @@ class InteraccionController extends Controller
     public function getInterracionPerro(InteraccionRequest $request)
     {
         try {
-            $interacciones = Interaccion::where('Perro_interesado_id', $request->id)->get();
+            $interacciones = Interaccion::where('Perro_interesado_id', $request->Perro_interesado_id)->get();
             return response()->json(["interacciones"=>$interacciones], Response::HTTP_OK);
         } catch (Exception $e) {
             return response()->json(["error"=>$e->getMessage()], Response::HTTP_BAD_REQUEST);

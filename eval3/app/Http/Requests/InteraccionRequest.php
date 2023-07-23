@@ -38,6 +38,7 @@ class InteraccionRequest extends FormRequest
             case 'GET':
                 return [
                     'id' => 'sometimes|required|integer',
+                    'Perro_interesado_id' => 'sometimes|required|integer',
                 ];
             case 'DELETE':
                 return [
