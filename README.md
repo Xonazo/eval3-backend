@@ -102,7 +102,7 @@ http://127.0.0.1:8000/api/interaccion/perro</br>
 Json Ejemplo:
 ```
 {
-	"id":"5"
+	"Perro_interesado_id":"5"
 }
 ```
 
