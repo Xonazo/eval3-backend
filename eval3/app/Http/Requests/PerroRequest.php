@@ -21,6 +21,7 @@ class PerroRequest extends FormRequest
                     'nombre' => 'sometimes|required|string',
                     'url_foto' => 'sometimes|required|string',
                     'descripcion' => 'sometimes|required|string',
+                    'sexo' => 'sometimes|required|string|in:macho,hembra',
                 ];
             case 'GET':
                 return [
@@ -35,6 +36,7 @@ class PerroRequest extends FormRequest
                     'nombre' => 'sometimes|required|string',
                     'url_foto' => 'sometimes|required|string',
                     'descripcion' => 'sometimes|required|string',
+                    'sexo' => 'sometimes|required|string|in:macho,hembra',
                     'id' => 'sometimes|required|integer',
                 ];
             default:
@@ -54,6 +56,10 @@ class PerroRequest extends FormRequest
         'descripcion.string' => 'El campo descripcion debe ser un string',
         'id.required' => 'El campo id es obligatorio',
         'id.integer' => 'El campo id debe ser un entero',
+        'sexo.required' => 'El campo sexo es obligatorio',
+        'sexo.string' => 'El campo sexo debe ser un string',
+        'sexo.in' => 'El campo sexo debe ser macho o hembra',
+        
      ];
     }
 
