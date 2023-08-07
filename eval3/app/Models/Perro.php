@@ -18,7 +18,8 @@ class Perro extends Model
     protected $fillable =[
         "nombre",
         "url_foto",
-        "descripcion"
+        "descripcion",
+        "sexo"
     ];
 
 }
