@@ -20,6 +20,7 @@ public function createPerro(PerroRequest $request)
         $perro->nombre = $request->nombre;
         $perro->url_foto = $request->url_foto;
         $perro->descripcion = $request->descripcion;
+        $perro->sexo = $request->sexo;
         $perro->save();
         return response()->json(["perro"=>$perro], Response::HTTP_OK);
     } catch (Exception $e) {
@@ -55,6 +56,7 @@ public function editPerro(PerroRequest $request)
         $perro->nombre = $request->nombre;
         $perro->url_foto = $request->url_foto;
         $perro->descripcion = $request->descripcion;
+        $perro->sexo = $request->sexo;
         $perro->save();
         return response()->json(["perro"=>$perro], Response::HTTP_OK);
     } catch (Exception $e) {
